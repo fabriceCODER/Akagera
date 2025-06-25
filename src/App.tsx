@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +17,16 @@ import AuthModal from "./components/AuthModal";
 import { CartProvider } from "./contexts/CartContext";
 import { AuthProvider } from "./contexts/AuthContext";
 import { useAuth } from "./contexts/AuthContext";
+import Blog from "./pages/Blog";
+import Compare from "./pages/Compare";
+import Returns from "./pages/Returns";
+import ShippingInfo from "./pages/ShippingInfo";
+import GiftCards from "./pages/GiftCards";
+import StoreLocator from "./pages/StoreLocator";
+import Careers from "./pages/Careers";
+import Affiliate from "./pages/Affiliate";
+import Newsletter from "./pages/Newsletter";
+import Accessibility from "./pages/Accessibility";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +60,16 @@ const AppRoutes = () => {
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/about" element={<About />} />
       <Route path="/categories" element={<Categories />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/compare" element={<Compare />} />
+      <Route path="/returns" element={<Returns />} />
+      <Route path="/shipping-info" element={<ShippingInfo />} />
+      <Route path="/gift-cards" element={<GiftCards />} />
+      <Route path="/store-locator" element={<StoreLocator />} />
+      <Route path="/careers" element={<Careers />} />
+      <Route path="/affiliate" element={<Affiliate />} />
+      <Route path="/newsletter" element={<Newsletter />} />
+      <Route path="/accessibility" element={<Accessibility />} />
       <Route 
         path="/profile" 
         element={
